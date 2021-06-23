@@ -9,7 +9,7 @@ public class Personaje {
     private int vida;
     private int armadura;
     private int ataque;
-    private String nombre;
+    String nombre;
     private boolean esHeroe;
 
     public Personaje (int vida, int armadura, int ataque, String nombre, boolean esHeroe) {
