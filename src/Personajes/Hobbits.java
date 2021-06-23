@@ -10,12 +10,17 @@ public class Hobbits extends Heroes {
 
 
     public static int getInstancias(){
-        return Hobbits.contadorInstancias;
+        return Hobbits.contadorInstancias++;
     }
 
     public Hobbits(String nombre){
         super(200, 40, nombre);
         Hobbits.contadorInstancias++;
     }
+     @Override
+    public void saludar(){
+        System.out.println("Hola soy un Hobbit y me llamo   " + this.nombre);
+    }
+
 
 }

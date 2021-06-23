@@ -1,4 +1,5 @@
 package Personajes;
+
 import Juego.Dado;
 
 /**
