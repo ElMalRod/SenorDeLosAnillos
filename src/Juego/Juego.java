@@ -57,8 +57,13 @@ public class Juego {
     }
 
     public void pelea() {
-        ejercitoBestias[0].recibirAtaque(ejercitoHeroes[0]);
-        ejercitoHeroes[0].recibirAtaque(ejercitoBestias[0]);
+        for (int i = 0; i < ejercitoBestias.length; i++) {
+            System.out.println("------RONDA "+(i+1)+"------");
+            ejercitoBestias[i].recibirAtaque(ejercitoHeroes[i]);
+            ejercitoHeroes[i].recibirAtaque(ejercitoBestias[i]);
+        }
+        
+        
     }
 
     public void inicializarHeroes() {
